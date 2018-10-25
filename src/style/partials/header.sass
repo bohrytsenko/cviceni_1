@@ -1,0 +1,74 @@
+// Header
+
+.header
+  padding: 20px 0 0 0
+  &__login
+    display: flex
+    justify-content: flex-end
+    margin-bottom: 10px
+    a
+      color: $color_burgundy
+      font-size: 18px
+      font-weight: 500
+      position: relative
+      transition: 0.5s
+      &:before
+        position: absolute
+        content: ''
+        background-color: $color_burgundy
+        width: 100%
+        height: 1px
+        bottom: 0
+        transition: 0.5s
+      &:hover
+        transition: 0.5s
+        color: black
+        &:before
+          transition: 0.5s
+          width: 50%
+          background-color: black
+  &__title
+    margin-bottom: 10px
+    .title
+      font-size: 60px
+      font-weight: 400
+      color: $color_burgundy
+  &__nav
+    background-color: $color_burgundy
+    padding: 15px 0
+    ul
+      display: flex
+      li
+        display: flex
+        align-items: center
+        position: relative
+        padding-right: 20px
+        &:before
+          position: absolute
+          content: ''
+          right: 10px
+          width: 2px
+          height: 80%
+          background-color: $color_white
+          transition: 0.5s
+        &:after
+          position: absolute
+          content: ''
+          background-color: $color_white
+          width: 0
+          height: 1px
+          bottom: 0
+          transition: 0.5s
+        &:last-child
+          &:before
+            display: none
+        &:hover
+          transition: 0.5s
+          &:after
+            transition: 0.5s
+            width: 50%
+        a
+          color: $color_white
+          font-size: 20px
+          font-weight: 500
+

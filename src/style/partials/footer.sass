@@ -1,0 +1,41 @@
+// Footer
+
+.footer
+  padding: 15px
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.footer_item
+  ul
+    display: flex
+    li
+      position: relative
+      display: flex
+      align-items: center
+      padding-right: 10px
+      &:before
+        position: absolute
+        content: ''
+        right: 5px
+        width: 1px
+        height: 80%
+        background-color: $color_burgundy
+        transition: 0.5s
+      &:after
+        position: absolute
+        content: ''
+        background-color: $color_burgundy
+        width: 0
+        height: 1px
+        bottom: 0
+        transition: 0.5s
+      &:last-child
+        &:before
+          display: none
+      &:hover
+        &:after
+          width: 80%
+      a
+        color: $color_burgundy
